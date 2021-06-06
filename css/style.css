@@ -58,12 +58,10 @@ ul {
   margin-right: 93px;
   
 }
+.contacts-mail,
 .contacts-tel {
-  width: 16px;
-  height: 12px;
-  fill: #000;
-  display: flex;
-  align-items: center;
+  fill: currentColor;
+  margin-right: 10px;
 }
 .webstudio {
   color: var(--accent-color);
