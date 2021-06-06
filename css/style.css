@@ -67,6 +67,10 @@ ul {
   color: var(--accent-color);
 }
 /*navigation*/
+.contacts-link {
+  display: flex;
+  align-items: center;
+}
 .menu-nav .link { 
 color: var(--primary-text-color);
 font-weight: 500;
