@@ -12,11 +12,13 @@
   --primary-logo-color: #000;
   --text-color: #757575;
   --mail-color: rgba(255, 255, 255, 0.6);
-  --box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  --box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%),
+    1px 4px 6px rgb(0 0 0 / 16%);
   --outline-color: #eeeeee;
   --border-color: #ececec;
   --border-listen-color: #eeeeee;
+  --icons-color: #afb1b8;
+  --hover-icons: #188ce8;
 }
 body {
   background-color: var(--title-text-color);
@@ -46,6 +48,7 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
   border-bottom: 1px solid var(--border-color);
+  /* outline: tomato solid 2px; */
 }
 
 .container {
@@ -54,9 +57,11 @@ ul {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  /* outline: #212121 solid 2px; */
 }
 /*logo*/
 .logo {
+  font-weight: 700;
   color: var(--primary-logo-color);
   font-family: Raleway;
   font-size: 26px;
@@ -92,6 +97,11 @@ ul {
 }
 
 /* contacts */
+.contacts-mail,
+.contacts-tel {
+  fill: currentColor;
+  margin-right: 10px;
+}
 .contacts {
   margin: 0;
   padding: 0;
@@ -106,6 +116,8 @@ ul {
   line-height: 1.2;
   letter-spacing: 0.02em;
   margin-right: 30px;
+  display: flex;
+  align-items: center;
 }
 .contacts-list:hover,
 .contacts-list:focus {
@@ -148,6 +160,7 @@ ul {
 .btn {
   display: flex;
   justify-content: center;
+  margin-bottom: 56px;
 }
 
 .btn > li:nth-child(-n + 4) {
@@ -262,4 +275,54 @@ footer {
 .mail-card {
   margin-top: 9px;
   margin-bottom: 9px;
+}
+.column {
+  display: flex;
+}
+.welcome-section {
+  display: inline-flex;
+  flex-direction: column;
+  padding: 0;
+  min-width: 206px;
+  margin-left: 70px;
+}
+
+.welcome {
+  margin: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--title-text-color);
+}
+.welcome-icons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.icons {
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  display: inline-block;
+  border-radius: 50%;
+  border: none;
+  fill: var(--icons-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.icons:hover,
+.icons:focus {
+  fill: var(--title-text-color);
+  background-color: var(--hover-icons);
+}
+.icons-svg {
+  width: 20px;
+  height: 20px;
+}
+.icons-svg:hover,
+.icons-svg:focus {
+  fill: var(--title-text-color);
 }
